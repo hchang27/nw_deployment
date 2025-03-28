@@ -1,0 +1,5 @@
+python mesh.py --EvalMesh.port=8013 --EvalMesh.dataset_prefix="stairs/scene_00002" --EvalMesh.checkpoint_meta="rgb" --EvalMesh.rgb_checkpoint="/alanyu/scratch/2024/02-02/022538/checkpoints/net_1000.pt"
+python mesh.py --EvalMesh.port=8013 --EvalMesh.dataset_prefix="stairs/scene_00003" --EvalMesh.checkpoint_meta="rgb" --EvalMesh.rgb_checkpoint="/alanyu/scratch/2024/02-02/022538/checkpoints/net_1000.pt"
+python mesh.py --EvalMesh.port=8013 --EvalMesh.dataset_prefix="stairs/scene_00004" --EvalMesh.checkpoint_meta="rgb" --EvalMesh.rgb_checkpoint="/alanyu/scratch/2024/02-02/022538/checkpoints/net_1000.pt"
+python mesh.py --EvalMesh.port=8013 --EvalMesh.dataset_prefix="stairs/scene_00005" --EvalMesh.checkpoint_meta="rgb" --EvalMesh.rgb_checkpoint="/alanyu/scratch/2024/02-02/022538/checkpoints/net_1000.pt"
+python mesh.py --EvalMesh.port=8013 --EvalMesh.dataset_prefix="stairs/scene_00006" --EvalMesh.checkpoint_meta="rgb" --EvalMesh.rgb_checkpoint="/alanyu/scratch/2024/02-02/022538/checkpoints/net_1000.pt"

@@ -1,0 +1,4 @@
+{"TrajGenerator.rollout_range": [0, 20], "TrajGenerator.add_noise_prob": 1.0, "TrajGenerator.sampling_noise": 0.1, "TrajGenerator.terrain_type": "parkour_flat", "TrajGenerator.prefix": "lucidsim/scenes/parkour_flat/noisy"}
+{"TrajGenerator.rollout_range": [0, 20], "TrajGenerator.add_noise_prob": 1.0, "TrajGenerator.sampling_noise": 0.1, "TrajGenerator.terrain_type": "parkour_hurdle", "TrajGenerator.prefix": "lucidsim/scenes/parkour_hurdle/noisy"}
+{"TrajGenerator.rollout_range": [0, 20], "TrajGenerator.add_noise_prob": 1.0, "TrajGenerator.sampling_noise": 0.1, "TrajGenerator.terrain_type": "parkour_gap", "TrajGenerator.prefix": "lucidsim/scenes/parkour_gap/noisy"}
+{"TrajGenerator.rollout_range": [0, 20], "TrajGenerator.add_noise_prob": 1.0, "TrajGenerator.sampling_noise": 0.1, "TrajGenerator.terrain_type": "parkour_step", "TrajGenerator.prefix": "lucidsim/scenes/parkour_step/noisy"}

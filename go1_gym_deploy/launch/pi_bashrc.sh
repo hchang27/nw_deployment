@@ -1,0 +1,6 @@
+sudo kill $(ps aux | grep sport | awk '{print $2}')
+sudo kill $(ps aux | grep autostart | awk '{print $2}')
+sudo kill $(ps aux | grep ros_ | awk '{print $2}')
+sudo kill $(ps aux | grep point | awk '{print $2}')
+sudo kill $(ps aux | grep live_human_pose | awk '{print $2}')
+sudo kill $(ps aux | grep mqttControlNode | awk '{print $2}')

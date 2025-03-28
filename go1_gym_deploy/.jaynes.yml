@@ -1,0 +1,66 @@
+version: 0
+mounts:
+  - !mounts.SSHCode &code_mount
+    local_path: .
+    local_tar: /tmp/{now:%Y-%m-%d}/{now:%H%M%S.%f}-pql_private.tar
+    container_path: /root/go1_gym_deploy
+    host_path: "{secret.JYNS_DIR}/pql_private/{now:%Y-%m-%d}/{now:%H%M%S.%f}-pql_private"
+    remote_tar: "{secret.JYNS_DIR}/pql_private/{now:%Y-%m-%d}/{now:%H%M%S.%f}-pql_private.tar"
+    excludes: >-
+      --exclude='samples' --exclude='images' --exclude='videos'
+      --exclude='figures' --exclude='results' --exclude='analysis' --exclude='*.ipynb'
+      --exclude='*__pycache__' --exclude='*.git' --exclude='*.png' --exclude='*.gif'
+      --exclude='*.mp4' --exclude='*.idea' --exclude='*.egg-info' --exclude='*.log*'
+      --exclude='dpvo' --exclude="*.cache" --exclude='.DS_Store' --exclude='*.tar'
+    compress: true
+runners:
+  - !runners.Simple &ssh-runner
+    name: "pi-{now:%H%M%S}-{RUN.count}"
+    setup: |
+      . $HOME/.bashrc
+      echo running inside `hostname`
+      echo cleaning previous run      
+      $HOME/setup_pi.bash
+    envs: >-
+      LANG=utf-8
+      LC_CTYPE=en_US.UTF-8
+  - !runners.Docker &ssh-docker
+    name: "pql_private-{now:%H%M%S}-{RUN.count}"
+    image: episodeyang/jetson-legged-deployment:2023-07-23
+    setup: |
+      echo hostname is $HOSTNAME
+      $HOME/nx_configure_network.bash
+      echo finished
+    startup: |
+      ls $HOME/go1_gym_deploy/runs
+      export PYTHONPATH=$PYTHONPATH:$HOME/
+      cd $HOME/go1_gym_deploy
+      echo 123 | sudo -S chmod +x ./configure/setup_lcm.bash
+      echo "\n" | ./configure/setup_lcm.bash &
+      echo Running deploy policy...
+      cd scripts
+      pwd
+    envs: LANG=utf-8
+    pypath: "{mounts[0].container_path}"
+    ipc: host
+    # gpus: all # Needed for accessing the GPU.
+
+modes:
+  setup_pi:
+    runner: *ssh-runner
+    launch: !ENV
+      type: ssh
+      ip: "go1-pi"
+      username: "pi"
+      password: "{secret.JYNS_PASSWORD}"
+
+  run_nx:
+    mounts:
+      - *code_mount
+    runner: *ssh-docker
+    launch: !ENV
+      type: ssh
+      ip: "go1-nx"
+      username: "unitree"
+      password: "{secret.JYNS_PASSWORD}"
+      root_config: echo cleaning... && ./docker_clean.sh episodeyang && ./nx_configure_network.bash

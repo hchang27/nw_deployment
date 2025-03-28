@@ -1,0 +1,5 @@
+python ego_view.py --TrajGenerator.dataset-prefix="mit_stairs/stairs_0003_v1"
+python ego_view.py --TrajGenerator.dataset-prefix="mit_stairs/stairs_0004_v1"
+python ego_view.py --TrajGenerator.dataset-prefix="mit_stairs/stairs_0005_v1"
+python ego_view.py --TrajGenerator.dataset-prefix="mit_stairs/stairs_0006_v1"
+python ego_view.py --TrajGenerator.dataset-prefix="mit_stairs/stairs_0007_v1"

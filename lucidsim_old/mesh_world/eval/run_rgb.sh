@@ -1,0 +1,5 @@
+#python mesh.py --EvalMesh.port=8012 --EvalMesh.dataset-prefix="hurdle/scene_00002" --EvalMesh.checkpoint-meta="rgb"  --EvalMesh.rgb-checkpoint="/alanyu/scratch/2024/02-02/063316/checkpoints/net_1000.pt"
+#python mesh.py --EvalMesh.port=8012 --EvalMesh.dataset-prefix="hurdle/scene_00003" --EvalMesh.checkpoint-meta="rgb"  --EvalMesh.rgb-checkpoint="/alanyu/scratch/2024/02-02/063316/checkpoints/net_1000.pt"
+python mesh.py --EvalMesh.port=8012 --EvalMesh.dataset-prefix="hurdle/scene_00004" --EvalMesh.checkpoint-meta="rgb"  --EvalMesh.rgb-checkpoint="/alanyu/scratch/2024/02-02/063316/checkpoints/net_1000.pt"
+python mesh.py --EvalMesh.port=8012 --EvalMesh.dataset-prefix="hurdle/scene_00005" --EvalMesh.checkpoint-meta="rgb"  --EvalMesh.rgb-checkpoint="/alanyu/scratch/2024/02-02/063316/checkpoints/net_1000.pt"
+python mesh.py --EvalMesh.port=8012 --EvalMesh.dataset-prefix="hurdle/scene_00006" --EvalMesh.checkpoint-meta="rgb"  --EvalMesh.rgb-checkpoint="/alanyu/scratch/2024/02-02/063316/checkpoints/net_1000.pt"

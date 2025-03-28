@@ -1,0 +1,193 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [],
+          "tag": "PointLight",
+          "key": "0",
+          "color": "white",
+          "intensity": 10,
+          "position": [
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "children": [],
+          "tag": "PointLight",
+          "key": "1",
+          "color": "white",
+          "intensity": 15,
+          "position": [
+            -3,
+            2,
+            2.5
+          ]
+        },
+        {
+          "children": [],
+          "tag": "Cylinder",
+          "key": "cone-1",
+          "args": [
+            0.04,
+            0.1,
+            0.25,
+            20
+          ],
+          "position": [
+            0,
+            0.625,
+            1
+          ],
+          "materialType": "standard",
+          "material": {
+            "emissive": "#222",
+            "roughness": 0.05,
+            "color": "#FFA500"
+          }
+        },
+        {
+          "children": [],
+          "tag": "Cylinder",
+          "key": "cone-2",
+          "args": [
+            0.04,
+            0.1,
+            0.25,
+            20
+          ],
+          "position": [
+            0,
+            1.075,
+            0
+          ],
+          "materialType": "standard",
+          "material": {
+            "emissive": "#222",
+            "roughness": 0.05,
+            "color": "#FFA500"
+          }
+        },
+        {
+          "children": [],
+          "tag": "Cylinder",
+          "key": "cone-3",
+          "args": [
+            0.04,
+            0.1,
+            0.25,
+            20
+          ],
+          "position": [
+            0,
+            1.525,
+            -1
+          ],
+          "materialType": "standard",
+          "material": {
+            "emissive": "#222",
+            "roughness": 0.05,
+            "color": "#FFA500"
+          }
+        },
+        {
+          "children": [],
+          "tag": "Box",
+          "key": "step-1",
+          "args": [
+            3,
+            0.7,
+            1
+          ],
+          "position": [
+            0,
+            0.15,
+            1
+          ],
+          "materialType": "standard",
+          "material": {
+            "emissive": "#222",
+            "roughness": 0.01,
+            "color": "#b1b1c2"
+          }
+        },
+        {
+          "children": [],
+          "tag": "Box",
+          "key": "step-2",
+          "args": [
+            3,
+            0.7,
+            1
+          ],
+          "position": [
+            0,
+            0.6,
+            0
+          ],
+          "materialType": "standard",
+          "material": {
+            "emissive": "#222",
+            "roughness": 0.01,
+            "color": "#b1b1c2"
+          }
+        },
+        {
+          "children": [],
+          "tag": "Box",
+          "key": "step-3",
+          "args": [
+            3,
+            0.7,
+            1
+          ],
+          "position": [
+            0,
+            1.1,
+            -1
+          ],
+          "materialType": "standard",
+          "material": {
+            "emissive": "#222",
+            "roughness": 0.01,
+            "color": "#b1b1c2"
+          }
+        },
+        {
+          "children": [],
+          "tag": "Plane",
+          "key": "2",
+          "args": [
+            100,
+            100
+          ],
+          "rotation": [
+            -1.57,
+            0,
+            0
+          ],
+          "materialType": "standard",
+          "material": {
+            "color": "#b1b1c2",
+            "emissive": "#222",
+            "roughness": 0.1
+          }
+        }
+      ],
+      "tag": "group",
+      "key": "scene-group"
+    }
+  ],
+  "tag": "Scene",
+  "key": "3",
+  "up": [
+    0,
+    0,
+    1
+  ],
+  "rawChildren": [],
+  "htmlChildren": [],
+  "bgChildren": []
+}

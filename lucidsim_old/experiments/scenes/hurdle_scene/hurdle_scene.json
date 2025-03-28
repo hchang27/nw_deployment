@@ -1,0 +1,70 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [],
+          "tag": "Box",
+          "key": "room",
+          "args": [
+            15,
+            15,
+            15
+          ],
+          "position": [
+            0,
+            0.5,
+            0
+          ],
+          "materialType": "depth",
+          "material": {
+            "side": 1
+          }
+        },
+        {
+          "children": [],
+          "tag": "Box",
+          "key": "hurdle",
+          "args": [
+            15,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0.5,
+            0
+          ],
+          "materialType": "depth"
+        },
+        {
+          "children": [],
+          "tag": "Plane",
+          "key": "0",
+          "args": [
+            100,
+            100
+          ],
+          "rotation": [
+            -1.57,
+            0,
+            0
+          ],
+          "materialType": "depth"
+        }
+      ],
+      "tag": "group",
+      "key": "scene-group"
+    }
+  ],
+  "tag": "Scene",
+  "key": "1",
+  "up": [
+    0,
+    0,
+    1
+  ],
+  "rawChildren": [],
+  "htmlChildren": [],
+  "bgChildren": []
+}

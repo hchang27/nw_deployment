@@ -1,0 +1,4 @@
+{"TrajGenerator.rollout_range": [0, 1000], "TrajGenerator.add_noise_prob": 0.0, "TrajGenerator.terrain_type": "parkour_flat", "TrajGenerator.prefix": "lucidsim/scenes/parkour_flat/teacher"}
+{"TrajGenerator.rollout_range": [0, 1000], "TrajGenerator.add_noise_prob": 0.0, "TrajGenerator.terrain_type": "parkour_hurdle", "TrajGenerator.prefix": "lucidsim/scenes/parkour_hurdle/teacher"}
+{"TrajGenerator.rollout_range": [0, 1000], "TrajGenerator.add_noise_prob": 0.0, "TrajGenerator.terrain_type": "parkour_gap", "TrajGenerator.prefix": "lucidsim/scenes/parkour_gap/teacher"}
+{"TrajGenerator.rollout_range": [0, 1000], "TrajGenerator.add_noise_prob": 0.0, "TrajGenerator.terrain_type": "parkour_step", "TrajGenerator.prefix": "lucidsim/scenes/parkour_step/teacher"}

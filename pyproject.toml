@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parkour"
+version = "0.0.1"
+description = "🍊xx Parkour Codebase"
+authors = ["Ge Yang", "Alan Yu"]
+license = "MIT"
+requires-python = ">=3.8"
+packages = ["agility_analysis", "cxx", "go1_gym_deploy", "lucidsim", "main_street"]
+
+[tool.ruff]
+target-version = "py38"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle
+    "F", # Pyflakes
+    "UP", # pyupgrade
+    "B", # flake8-bugbear
+    "SIM", # flake8-simplify
+    "I", # isort
+    "NPY", # numpy
+]
+ignore = ["E1", "E501"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.mypy]
+ignore_missing_imports = true
+python_version = "3.8"
+packages = ["agility_analysis", "cxx", "go1_gym_deploy", "lucidsim", "main_street"]
+
+[[tool.mypy.overrides]]
+module = "parkour.*"
+ignore_missing_imports = false

@@ -1,0 +1,22 @@
+<mujoco model="examples/hurdle">
+ <worldbody>
+  <body name="scene-group">
+   <body euler="0 0 -1.57" name="hurdle1" pos="0 0 0.5">
+    <geom size="7.5 0.125 0.125" type="box">
+    </geom>
+   </body>
+   <body euler="0 0 -1.57" name="hurdle2" pos="2.0 0 0.5">
+    <geom size="7.5 0.125 0.125" type="box">
+    </geom>
+   </body>
+   <body euler="0 0 -1.57" name="hurdle3" pos="4.0 0 0.5">
+    <geom size="7.5 0.125 0.125" type="box">
+    </geom>
+   </body>
+   <body euler="0 0 0" name="2">
+    <geom size="50.0 50.0 1" type="plane">
+    </geom>
+   </body>
+  </body>
+ </worldbody>
+</mujoco>

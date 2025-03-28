@@ -1,0 +1,24 @@
+<mujoco model="examples/stairs">
+ <worldbody>
+  <body euler="0 0 -1.57" name="1" pos="2.0 0 -0.15">
+   <body euler="1.57 0 0" name="scene-group">
+    <body name="step-1" pos="0 0.3 1">
+     <geom size="7.5 0.35 0.5" type="box">
+     </geom>
+    </body>
+    <body name="step-2" pos="0 0.6 0">
+     <geom size="7.5 0.35 0.5" type="box">
+     </geom>
+    </body>
+    <body name="step-3" pos="0 0.8999999999999999 -1">
+     <geom size="7.5 0.35 0.5" type="box">
+     </geom>
+    </body>
+    <body euler="-1.57 0 0" name="0">
+     <geom size="50.0 50.0 1" type="plane">
+     </geom>
+    </body>
+   </body>
+  </body>
+ </worldbody>
+</mujoco>

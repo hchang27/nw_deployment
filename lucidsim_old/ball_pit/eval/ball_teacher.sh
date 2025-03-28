@@ -1,0 +1,5 @@
+python mesh.py --EvalMesh.render-type="neither" --EvalMesh.checkpoint-meta="teacher" --EvalMesh.rgb-checkpoint="/alanyu/scratch/2024/02-01/234343/checkpoints/net_0.pt"
+python mesh.py --EvalMesh.render-type="depth" --EvalMesh.checkpoint-meta="depth" --EvalMesh.rgb-checkpoint="/alanyu/scratch/2024/02-02/214259/checkpoints/net_1000.pt" 
+python mesh.py --EvalMesh.render-type="rgb" --EvalMesh.checkpoint-meta="rgb" --EvalMesh.rgb-checkpoint="/alanyu/scratch/2024/02-03/011115/checkpoints/net_1000.pt"
+python mesh.py --EvalMesh.render-type="rgb" --EvalMesh.checkpoint-meta="augmented" --EvalMesh.rgb-checkpoint="/alanyu/scratch/2024/02-02/165430/checkpoints/net_1000.pt"
+python mesh.py --EvalMesh.render-type="rgb" --EvalMesh.checkpoint-meta="stacked" --EvalMesh.rgb-checkpoint="/alanyu/scratch/2024/02-03/011033/checkpoints/net_1000.pt" 
